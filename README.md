@@ -1,11 +1,11 @@
-# version_file.pl
+# version_my_file.pl
 This is a Perl implementation for a version control for files in a directory.
 Mostly useful when working with non-text-based documents (xls, ppt, docx) on a Windows OS in a local environment, for which version control is not well developped.
 The script adds a date and time stamps to the file name and log the commit message to the same directory (newest commits on top of the log file).
 
 # Usage
  ```
- perl .\version_file.pl
+ perl .\version_my_file.pl
  ```
 
 A Tk window appears to make you select the target directory 
