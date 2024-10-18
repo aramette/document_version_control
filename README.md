@@ -8,15 +8,23 @@ The script adds a date and time stamps to the file name and log the commit messa
  perl .\version_my_file.pl
  ```
 
-A Tk window appears to make you select the target directory 
+A Perl Tk window allows you navigating and selecting the target directory.
 
+A confirmation message appears:
+
+```
 You chose: C:/rename_file_currentdateStamp/F2
-then the program lists all the files in the target directory: 
+```
+
+Then the program lists and indexes all the files in the target directory: 
 ```
 [1] .
 [2] ..
 [3] plasmids.docx
 Which file to make a time-stamped copy? (nber; 0 = exit)
+```
+Then you can enter the choosen index and comment on the version.
+```
 3
 Commit text: My first comment
 ```
@@ -24,7 +32,7 @@ which produces a log file "log_versions.txt" in the target directory with the as
 ```
 plasmids_2024-10-18_11h10.docx --> My first comment
 ```
-A copy is made in the target directory and a date (YYYY-MM-DD_Hhm) is appended to the new file name.
+The date (YYYY-MM-DD_Hhm) is appended to the newly copied file name.
 
 Repeating the operation later produces the following text in the "log_versions.txt".
 
